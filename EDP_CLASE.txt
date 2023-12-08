@@ -1,0 +1,21 @@
+clear all
+
+%Ecuacion diferencial parcial de segundo grado - CLASE:
+fprintf("\nDada una EDP de 2do Grado: ");
+fprintf("\nA*Uxx+B*Uxy+C*Uyy+D*Ux+E*Uy+F*U=G");
+
+A=input('\nValor de A:');
+B=input('Valor de B:');
+C=input('Valor de C:');
+
+Disc = B^2-4*A*C 
+
+if Disc<0
+    fprintf("\tEcuacion Eliptica");
+elseif Disc==0
+    fprintf("\tEcuacion Parabolica");
+elseif Disc>0
+    fprintf("\tEcuacion Hiperbolica");
+else
+    fprintf("\tError");
+end
